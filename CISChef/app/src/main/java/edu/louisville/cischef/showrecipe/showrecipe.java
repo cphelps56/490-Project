@@ -113,7 +113,7 @@ public class showrecipe extends Fragment {
         butFav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+
                     Recipe recipe = new Recipe();
 
                     Map<String, Object> updates = new HashMap<String, Object>();
