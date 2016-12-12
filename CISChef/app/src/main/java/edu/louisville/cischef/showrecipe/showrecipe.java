@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
@@ -79,6 +80,7 @@ public class showrecipe extends Fragment {
 
             }
 
+
         });
 
         Button butDelete =(Button) view.findViewById(R.id.butdelete);
@@ -111,11 +113,11 @@ public class showrecipe extends Fragment {
         butFav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                
                     Recipe recipe = new Recipe();
 
                     Map<String, Object> updates = new HashMap<String, Object>();
-                    // updates.put(key, recipe);
+//                    updates.put(key, recipe);
 
                     Log.d(Constants.TAG, "recipe:" + recipe.toString());
                     mRecipeReference.updateChildren(updates);

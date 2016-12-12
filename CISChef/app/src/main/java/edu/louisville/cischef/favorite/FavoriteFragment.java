@@ -44,7 +44,7 @@ public class FavoriteFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_favorite, container, false);
         favMap = new HashMap<>();
-        favlistView =(ListView) view.findViewById(R.id.list);
+        favlistView =(ListView) view.findViewById(R.id.favList);
         favlistAdapter= new FirebaseListAdapter<Recipe>(getActivity(),Recipe.class, R.layout.recipe_layout,mRecipeReference) {
             @Override
             protected void populateView(View v, Recipe model, int position) {
